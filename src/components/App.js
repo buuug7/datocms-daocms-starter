@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Header from "./Header";
 import Home from "./Home";
+import Posts from "./Posts";
 import About from "./About";
 import Recipe from "./Recipe";
 
@@ -12,6 +13,7 @@ const App = () => (
     <main>
       <Route exact path="/" component={Home} />
       <Route path="/recipes/:slug" component={Recipe} />
+      <Route path="/posts" component={Posts} />
       <Route path="/about" component={About} />
     </main>
   </Router>

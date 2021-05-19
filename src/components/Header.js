@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export default () => (
   <header className="Header-header">
-    <h1 className="Header-h1">I know my kitChen - blog</h1>
+    <h1 className="Header-h1">Some test content from DaoCMS</h1>
     <nav className="Header-nav">
       <NavLink
         exact
@@ -12,6 +12,13 @@ export default () => (
         activeClassName="Header-isActive"
       >
         Home
+      </NavLink>
+      <NavLink
+        to="/posts"
+        className="Header-navLink"
+        activeClassName="Header-isActive"
+      >
+        Posts
       </NavLink>
       <NavLink
         to="/about"
